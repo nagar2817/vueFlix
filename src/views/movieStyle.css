@@ -1,0 +1,135 @@
+html, body {
+	 max-height: 100%;
+	 height: 100%;
+	 /* overflow: hidden; */
+}
+ html, body {
+	 height: 100%;
+	 /* overflow: hidden; */
+	 font-family: "Nunito Sans", serif;
+	 background: #fef6e4;
+}
+ .background {
+	 max-height: 100%;
+	 height: 100%;
+	 overflow: scroll;
+	 background: #f2f2f2;
+	 display: flex;
+	 padding: 20px;
+	 box-sizing: border-box;
+	 font-family: "Nunito Sans", sans-serif;
+}
+ .poster {
+	 aspect-ratio: 0.75;
+	 min-width: 500px;
+	 width: 500px;
+	 background: #f5f4eb;
+	 margin: auto;
+	 position: relative;
+	 overflow: hidden;
+	 display: flex;
+	 border: 5px solid #121212;
+}
+ .poster--content {
+	 padding: 6%;
+	 display: flex;
+	 flex-direction: column;
+	 flex-grow: 1;
+}
+ .poster--image {
+	 width: 100%;
+	 position: relative;
+	 z-index: 0;
+     
+}
+ .poster--image img {
+	 width: 100%;
+	 object-fit: cover;
+	 aspect-ratio: 1;
+	 position: relative;
+}
+ .poster--info {
+	 display: flex;
+	 margin-top: 5%;
+	 flex-grow: 1;
+}
+ .poster--info-col-1, .poster--info-col-2 {
+	 display: flex;
+	 flex-direction: column;
+}
+ .poster--info-col-1 {
+	 flex: 8;
+}
+ .poster--info-col-2 {
+	 flex: 5;
+}
+ .poster--tracks {
+	 text-transform: uppercase;
+	 font-size: 0.55rem;
+	 font-weight: 800;
+	 display: flex;
+	 flex-direction: column;
+}
+ .poster--tracks ol {
+	 list-style-type: decimal;
+	 list-style-position: inside;
+	 column-count: 2;
+	 column-gap: 5%;
+}
+ .poster--tracks ol li:not(:last-child) {
+	 margin-bottom: 5%;
+}
+ .poster--release-info {
+	 font-weight: 400;
+	 text-transform: uppercase;
+	 font-size: 0.5rem;
+	 margin-bottom: 0;
+	 margin-top: auto;
+}
+ .poster--genre {
+	 font-weight: 400;
+	 font-size: 0.55rem;
+	 margin-top: 7%;
+	 margin-inline: auto 0;
+}
+ .poster--title {
+	 margin-top: auto;
+	 margin-bottom: 0;
+}
+ .poster--artist {
+	 font-weight: 600;
+	 font-size: 1.5rem;
+	 text-align: right;
+}
+ .poster--album {
+	 font-weight: 800;
+	 font-size: 1.5rem;
+	 text-align: right;
+}
+ .poster--colors {
+	 display: flex;
+	 margin-inline: 2% 0;
+	 flex-direction: row;
+	 gap: 5%;
+}
+ .poster--colors .color {
+	 aspect-ratio: 1;
+	 align-self: start;
+	 width: 100%;
+}
+ .poster--colors .color-1 {
+	 background: #ddd5cf;
+}
+ .poster--colors .color-2 {
+	 background: #2c302a;
+}
+ .poster--colors .color-3 {
+	 background: #437761;
+}
+ .poster--colors .color-4 {
+	 background: #e0be31;
+}
+ .poster--colors .color-5 {
+	 background: #c2374d;
+}
+ 
