@@ -73,7 +73,7 @@
             <p>{{  item.year }}</p>
             <b-card-actions class="justify-content-center">
             <b-button variant="primary"  @click="viewMovie(item.id)">View</b-button>
-            <b-button variant="primary"  @click="addToFavorites(item)" class="ml-3">Add to Favorite</b-button>
+            <b-button variant="primary"  @click="addToFav(item)" class="ml-3">Add to Favorite</b-button>
 
           </b-card-actions>
 
@@ -128,6 +128,9 @@ export default {
     
     viewMovie(id) {
       this.$router.push('/movie/' + id);
+    },
+    addToFav(movie){
+      this.$store.commit('addToFavorites',movie);
     },
     handleInputChange() {
       if (this.searchTerm) {

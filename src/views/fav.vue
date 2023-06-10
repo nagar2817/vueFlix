@@ -11,7 +11,7 @@
           <b-card-actions class="justify-content-center">
           <b-button variant="primary"  @click="viewMovie(item.id)">View</b-button>
           <b-button variant="primary"  @click="goBack()" class="ml-3">Back</b-button>
-          <b-button variant="primary"  @click="removeFav(item.id)" class="ml-3">Remove </b-button>
+          <b-button variant="primary"  @click="removeFav(item)" class="ml-3">Remove </b-button>
         </b-card-actions>
   </b-card>
       </b-col>
@@ -27,8 +27,8 @@ export default {
     goBack() {
       this.$router.push('/');
     },
-    removeFav(movieId) {
-      this.$store.dispatch('favorites/removeFromFavorites', movieId);
+    removeFav(item) {
+      this.$store.commit('removeFromFavorites', item);
     },
     viewMovie(movieId){
       this.$router.push('/movie/' + movieId);
